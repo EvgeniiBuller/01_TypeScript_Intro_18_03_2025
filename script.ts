@@ -20,3 +20,4 @@ const arr: number[] = [1, 2, 3, 4];
 //arr.push('5')  Пример ошибки типизации
 const  arr1: number[] | string[] = ["1", "2", "3"];
 const arr2: (number | string)[] = [1, '2', 3, '4'];
+const arr3: number | string[] = 50;
