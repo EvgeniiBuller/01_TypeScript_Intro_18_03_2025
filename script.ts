@@ -21,3 +21,39 @@ const arr: number[] = [1, 2, 3, 4];
 const  arr1: number[] | string[] = ["1", "2", "3"];
 const arr2: (number | string)[] = [1, '2', 3, '4'];
 const arr3: number | string[] = 50;
+
+interface IPerson {
+    name: string,
+    age: number
+}
+
+// type Person = {
+//     name: string,
+//     age: number
+// }
+
+const person: IPerson = {
+    name: "Bill",
+    age: 38
+}
+
+type Direction = 'left' | 'right' | 'up' | 'down'
+
+let direction: Direction = 'left';
+direction = 'right'; 
+direction = 'up';
+direction = 'down';
+
+// direction = 'eight'; - Ошибка типизации
+
+const sum = (a: number, b: number): string | number => {
+    return (
+        a + b > 100 ?
+         a + b :
+         a + b + ""
+        );
+};
+
+console.log(typeof sum(200, 5));
+// console.log(sum('2', 5)); пример ошибки типизации параметров
+// console.log(sum(true, 5));

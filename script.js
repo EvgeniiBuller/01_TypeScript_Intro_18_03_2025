@@ -13,3 +13,25 @@ var arr = [1, 2, 3, 4];
 //arr.push('5')  Пример ошибки типизации
 var arr1 = ["1", "2", "3"];
 var arr2 = [1, '2', 3, '4'];
+var arr3 = 50;
+// type Person = {
+//     name: string,
+//     age: number
+// }
+var person = {
+    name: "Bill",
+    age: 38
+};
+var direction = 'left';
+direction = 'right';
+direction = 'up';
+direction = 'down';
+// direction = 'eight'; - Ошибка типизации
+var sum = function (a, b) {
+    return (a + b > 100 ?
+        a + b :
+        a + b + "");
+};
+console.log(typeof sum(200, 5));
+// console.log(sum('2', 5)); пример ошибки типизации параметров
+// console.log(sum(true, 5));
